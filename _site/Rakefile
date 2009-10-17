@@ -1,6 +1,6 @@
 
-# def jekyll(opts = "", path = "../jekyll/bin/")
-def jekyll(opts = "", path = "/usr/local/lib/ruby/gems/1.8/gems/mojombo-jekyll-0.5.4/bin/") #this is the local path to jekyll on my macosx
+def jekyll(opts = "", path = "../gem/metajack/jekyll/bin/")
+# def jekyll(opts = "", path = "/usr/local/lib/ruby/gems/1.8/gems/mojombo-jekyll-0.5.4/bin/") #this is the local path to jekyll on my macosx
 # def jekyll(opts = "", path = "/usr/local/lib/ruby/gems/1.8/gems/henrik-jekyll-0.5.2/bin/") 
   
   sh "rm -rf _site"

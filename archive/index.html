@@ -4,9 +4,18 @@ layout: default
 
 <h1>Archive</h1>
 
-{%  for p in site.posts  %}
-
-{{ p.date.strftime("%Y") }}
-
- {% endfor %}
-
+<ul>
+{% for y in (2007..2025) reversed %}
+  {% if site.collated_posts[y] %}
+    <li>{{ y }}
+    <ul>
+      {% for m in (1..12) reversed %}
+        {% if site.collated_posts[y][m] %}
+          <li><a href='/{{ y }}/{{ m }}/'>{{ m | to_month}}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+    </li>
+  {% endif %}
+{% endfor %}
+</ul>
