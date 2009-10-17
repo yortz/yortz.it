@@ -1,0 +1,55 @@
+pygments:       true
+permalink: /:year/:month/:day/:title
+paginate:       5
+
+
+exclude:
+    - README.md
+
+title:          Y0rTz.it
+url:            http://yortz.it
+feed:           /atom.xml
+description:    "ROR developer lost in IT."
+comment:        now powered by JEKYLL!
+
+author:
+    name:       Y0rTz
+    email:      info@yortz.it
+    twitter:    yortz_rfc
+    
+about: >
+    You can follow me on <a href="http://twitter.com/yortz_rfc">Twitter</a>, fork me
+    <a href="http://github.com/yortz">GitHub</a>.
+    
+disqus:
+    id:         yortz
+
+nav:
+    - name:     Blog
+      url:      /
+        
+    - name:     About
+      url:      /about/
+          
+    - name: Contact
+      url:  mailto:info-at-yortz-dot-it
+    
+
+footer:
+    - verb:     Thinking
+      action:   "YAML &gt; JSON"
+
+    - verb:     Listening
+      action:   Pandora of course
+      
+copyright:
+    - "&copy; Copyright 2009, Y0rTz.it. All Rights Reserved."
+      
+css:
+    - /lib/yortz.css
+    - /lib/syntax.css
+    
+js:
+    - http://ajax.googleapis.com/ajax/libs/mootools/1.2.3/mootools-yui-compressed.js
+    - /lib/mootools-more.js
+    - /lib/appden.js

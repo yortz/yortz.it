@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<h1>Archive</h1>
+
+{%  for p in site.posts  %}
+
+{{ p.date.strftime("%Y") }}
+
+ {% endfor %}
+
