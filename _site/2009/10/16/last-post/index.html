@@ -71,9 +71,9 @@
 			
 				| Tagged
 				
-				<a href="/tags/JavaScript.html">	JavaScript </a>
+				<a href="/tags/JavaScript/index.html">	JavaScript </a>
 				
-				<a href="/tags/Code.html">	Code </a>
+				<a href="/tags/Code/index.html">	Code </a>
 				
 				
 			
@@ -99,10 +99,10 @@
 		var disqus_developer = (/localhost|github|dev/i).test(location.host);
 	</script>
 
-	<script type="text/javascript" src="http://disqus.com/forums/yortz/embed.js"></script>
+	<script type="text/javascript" src="http://disqus.com/forums/yortz_it/embed.js"></script>
 
 	<noscript>
-		<a href="http://yortz.disqus.com/?url=ref">View the discussion thread.</a>
+		<a href="http://yortz_it.disqus.com/?url=ref">View the discussion thread.</a>
 	</noscript>
 </div>
 
@@ -244,16 +244,18 @@
 		
 		
 		<script type="text/javascript">
-			(function(){
-				var links = document.getElementsByTagName('a');
-				var query = '?';
-				for (var i = 0; i < links.length; i++){
-					if (links[i].href.indexOf('#disqus_thread') >= 0){
-						query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
-					}
-				}
-				document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/yortz/get_num_replies.js' + query + '"></' + 'script>');
-			})();
+		//<![CDATA[
+		(function() {
+			var links = document.getElementsByTagName('a');
+			var query = '?';
+			for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+			}
+			document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/yortzit/get_num_replies.js' + query + '"></' + 'script>');
+		})();
+		//]]>
 		</script>
 	</body>
 </html>

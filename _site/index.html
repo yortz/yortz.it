@@ -74,9 +74,9 @@
 			
 				| Tagged
 				
-				<a href="/tags/JavaScript.html">	JavaScript </a>
+				<a href="/tags/JavaScript/index.html">	JavaScript </a>
 				
-				<a href="/tags/Code.html">	Code </a>
+				<a href="/tags/Code/index.html">	Code </a>
 				
 				
 			
@@ -115,11 +115,11 @@
 			
 				| Tagged
 				
-				<a href="/tags/JavaScript.html">	JavaScript </a>
+				<a href="/tags/JavaScript/index.html">	JavaScript </a>
 				
-				<a href="/tags/Rails.html">	Rails </a>
+				<a href="/tags/Rails/index.html">	Rails </a>
 				
-				<a href="/tags/various.html">	various </a>
+				<a href="/tags/various/index.html">	various </a>
 				
 				
 			
@@ -158,9 +158,9 @@
 			
 				| Tagged
 				
-				<a href="/tags/JavaScript.html">	JavaScript </a>
+				<a href="/tags/JavaScript/index.html">	JavaScript </a>
 				
-				<a href="/tags/Code.html">	Code </a>
+				<a href="/tags/Code/index.html">	Code </a>
 				
 				
 			
@@ -199,9 +199,9 @@
 			
 				| Tagged
 				
-				<a href="/tags/JavaScript.html">	JavaScript </a>
+				<a href="/tags/JavaScript/index.html">	JavaScript </a>
 				
-				<a href="/tags/Rails.html">	Rails </a>
+				<a href="/tags/Rails/index.html">	Rails </a>
 				
 				
 			
@@ -368,16 +368,18 @@
 		
 		
 		<script type="text/javascript">
-			(function(){
-				var links = document.getElementsByTagName('a');
-				var query = '?';
-				for (var i = 0; i < links.length; i++){
-					if (links[i].href.indexOf('#disqus_thread') >= 0){
-						query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
-					}
-				}
-				document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/yortz/get_num_replies.js' + query + '"></' + 'script>');
-			})();
+		//<![CDATA[
+		(function() {
+			var links = document.getElementsByTagName('a');
+			var query = '?';
+			for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+			}
+			document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/yortzit/get_num_replies.js' + query + '"></' + 'script>');
+		})();
+		//]]>
 		</script>
 	</body>
 </html>
