@@ -28,7 +28,7 @@
 			{% unless post.tags == empty %}
 				| Tagged
 				{% for tag in post.tags %}
-				<a href="/tags/{{ tag }}.html">	{{ tag }} </a>
+				<a href="/tags/{{ tag }}/index.html">	{{ tag }} </a>
 				{% endfor %}
 				
 			{% endunless %}
