@@ -652,4 +652,16 @@ h3 {
     .tag-cloud .very-popular    { font-size: 2em; }
     .tag-cloud .ultra-popular   { font-size: 2.5em; }
 
+/*****************************************************************************
+ *  GOOGLE SEARCH
+ */
 
+
+/*td.gsc-branding-text, td.gsc-branding-img {
+ display: none;
+}
+
+.cse-branding-text, .cse-branding-logo {
+	visibility: hidden;
+}
+*/
