@@ -24,10 +24,13 @@
 		</p>
 		<p>
 			Filed in
-			{{ post.categories | array_to_sentence_string | capitalize }}
+		<a href="/{{ post.categories }}.html">	{{ post.categories | array_to_sentence_string | capitalize }} </a>
 			{% unless post.tags == empty %}
-				| tagged
-				{{ post.tags | array_to_sentence_string }}
+				| Tagged
+				{% for tag in post.tags %}
+				<a href="/tags/{{ tag }}.html">	{{ tag }} </a>
+				{% endfor %}
+				
 			{% endunless %}
 		</p>
 	</div>
