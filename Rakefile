@@ -3,39 +3,31 @@ def jekyll(opts = "", path = "/usr/local/mikewest-jekyll/bin/")
   sh path + "jekyll " + opts
 end
 
-desc "Build site using Jekyll"
-task :build do
-  jekyll
-end
+namespace :site do
+  
+  desc "Build site using Jekyll"
+  task :build do
+    jekyll
+  end
 
-desc "Serve on Localhost with port 4000"
-task :default do
-  jekyll("--server --auto")
-end
-
-task :stable do
-  jekyll("--server --auto", "")
-end
-
-desc "Deploy to Dev"
-task :deploy => :"deploy:dev"
-
-namespace :deploy do
-  desc "Deploy to Dev"
-  task :dev => :build do
-    rsync "dev.appden.com"
+  desc "Serve on Localhost with port 4000"
+  task :default do
+    jekyll("--server --auto")
   end
   
-  desc "Deploy to Live"
-  task :live => :build do
-    rsync "appden.com"
+  desc "remove deploy.rb, Capfile, Readme and deploy.rb from _site"
+  task :purge do
+    sh "rm _site/Capfile _site/README.markdown _site/Rakefile _site/config/deploy.rb"
   end
   
-  desc "Deploy to Dev and Live"
-  task :all => [:dev, :live]
+  desc "build and purge _site"
+  task :generate => [:build, :purge]
   
-  def rsync(domain)
-    sh "rsync -rtz --delete _site/ scottwkyle@appden.com:~/#{domain}/"
+  desc "clean _site"
+  task :clean do
+    sh "rm -rf _site"
   end
 end
 
+
+ 
