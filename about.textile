@@ -6,6 +6,7 @@ title:      About Me
 
 h2. About Me
 
+lots of bla bla in here
 
 *  "contact me":mailto:info-at-dotcom-after-yortz if you think that we'd make a great team.
 
