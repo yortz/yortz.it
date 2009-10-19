@@ -5,9 +5,6 @@ category: category1
 tags:
 - JavaScript
 - Code
-categories:
-- Code Category
-- Java Category
 ---
 
 Please allow me to briefly introduce myself and my very first blog (making me fashionably late to the party).[1]

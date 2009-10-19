@@ -26,7 +26,7 @@
 			Filed in
 			{{ post.categories | array_to_sentence_string | capitalize }}
 			{% unless post.tags == empty %}
-				and tagged
+				| tagged
 				{{ post.tags | array_to_sentence_string }}
 			{% endunless %}
 		</p>
