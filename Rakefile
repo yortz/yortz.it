@@ -17,7 +17,8 @@ namespace :site do
   
   desc "remove deploy.rb, Capfile, Readme and deploy.rb from _site"
   task :purge do
-    sh "rm _site/Capfile README.md _site/Rakefile _site/config"
+    sh "rm _site/Capfile README.md _site/Rakefile"
+    sh "rm -rf _site/config"
   end
   
   desc "build and purge _site"
