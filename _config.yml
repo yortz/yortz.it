@@ -1,6 +1,6 @@
 pygments:       true
 permalink: /:year/:month/:day/:title
-paginate:       5
+paginate:       4
 
 
 exclude:
@@ -25,14 +25,14 @@ disqus:
     id:         yortz
 
 nav:
-    - name:     Blog
-      url:      /
-        
-    - name:     About
-      url:      /about/
-          
-    - name: Contact
-      url:  mailto:info-at-yortz-dot-it
+    # - name:     Blog
+    #   url:      /
+    #     
+    # - name:     About
+    #   url:      /about/
+    #       
+    # - name: Contact
+    #   url:  mailto:info-at-yortz-dot-it
     
 
 footer:

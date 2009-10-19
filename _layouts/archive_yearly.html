@@ -2,11 +2,11 @@
 layout: default
 ---
 
-<h1>{{ page.year }}</h1>
+<h2>{{ page.year }}</h2>
 <ul>
 {% for m in (1..12) reversed %}
   {% if site.collated_posts[page.year][m] %}
-    <li>{{ m | to_month }}
+    <li><h3>{{ m | to_month }}</h3>
     <ul>
     {% for d in (1..31) reversed %}
       {% if site.collated_posts[page.year][m][d] %}
@@ -16,6 +16,7 @@ layout: default
       {% endif %}
     {% endfor %}
     </ul>
+<br />
     </li>
   {% endif %}
 {% endfor %}

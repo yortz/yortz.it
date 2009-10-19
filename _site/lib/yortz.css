@@ -571,3 +571,85 @@ h3 {
 /* @end */
 
 
+
+/*****************************************************************************
+ *  Archive/Tag Pages
+ */
+    div.archive h2+p {
+        width:      33.286em;
+        padding:    1em;
+        margin:     1em auto;
+        border:     1px solid #999;
+        background: #EEE;
+    }
+    div.archive ol {
+        width:          43.286em;
+        font:           1.077em/1.5 Georgia,Palatino,'Palatino Linotype',Times,'Times New Roman',serif;
+        text-align:     justify;
+        margin:         1em auto;
+    }
+        .archive ol li {
+            margin:     0 0 1.5em 0;
+            clear:      both;
+            overflow:   visible;
+        }
+            .archive ol li a:first-child {
+                float:          left;
+                margin-bottom:  0.25em;
+                margin-left:    -20px;
+                font:           1.143em/1.25 Georgia,Palatino,'Palatino Linotype',Times,'Times New Roman',serif;
+                font-variant:   small-caps;
+                text-transform: capitalize;
+                text-align:     left;
+                width:          490px;
+            }
+            .archive ol li.internal a:first-child {
+                font-size:      1.5em;
+            }
+            .archive ol li.external a:first-child {
+                padding-left:   20px;
+                background:     url(http://www.google.com/s2/favicons?domain=delicious.com) top left no-repeat;
+            }
+        .archive .meta {
+            float:          right;
+            text-align:     right;
+            font-style:     italic;
+            color:          #666;
+            font-size:      0.786em;
+        }
+    .archive ol li.flickr {
+        position:   relative;
+        overflow:   hidden;
+        min-height: 67px;
+    }
+        .archive ol li.flickr img {
+            width:      63px;
+            border:     1px solid #333;
+            margin:     0pt 1em 1em 0pt;
+            padding:    1px;
+            position:   absolute;
+            top:        0;
+            left:       0;
+        }
+        .archive ol li.flickr p, .archive ol li.flickr a {
+            margin-left:    77px;
+        }
+        .archive ol li.flickr a {
+            width:  400px;
+        }
+
+/*****************************************************************************
+ *  TAG CLOUD
+ */
+    .tag-cloud ol li {
+        display:    inline;
+    }
+        .tag-cloud ol li a {
+            padding:    0 0.5em;
+        }
+    .tag-cloud .not-popular     { font-size: 1em; }
+    .tag-cloud .popular         { font-size: 1.5em; }
+    .tag-cloud .very-popular    { font-size: 2em; }
+    .tag-cloud .ultra-popular   { font-size: 2.5em; }
+
+
