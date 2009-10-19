@@ -5,7 +5,7 @@ paginate:       4
 
 exclude:
     - README.md
-    - _site
+    
 
 title:          Y0rTz.it
 url:            http://yortz.it
