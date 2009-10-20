@@ -1,3 +1,5 @@
+/* @override http://yortz.it/lib/disqus-form.css */
+
 * {
 	margin: 0;
 	padding: 0;
@@ -8,8 +10,28 @@
 	list-style: none;
 }
 
-#dsq-content textarea {
-	height: 100px;
+
+
+form-message, #comment-form {
+	color: #f2e6d8;
+    overflow: hidden;
+}
+
+
+#comment-form {
+	background-color: #f93446;
+	overflow: hidden;
+}
+ #dsq-textarea-wrapper{
+	overflow: hidden;
+}
+
+#dsq-content .dsq-textarea .dsq-textarea-wrapper {
+padding:0;
+}
+
+textarea {
+	height: 150px;
 	background: none;
 	border-bottom: 1px solid #333;
 	padding-top: 1px;
@@ -36,7 +58,8 @@ input[type=submit] {
 	text-shadow: #222 0 -1px 1px;
 	cursor: pointer;
 	opacity: .75;
-/*	-webkit-transition: opacity 0.1s linear;*/
+	-webkit-transition: opacity 0.1s linear;
+	
 }
 
 input[type=submit]:hover,
@@ -56,7 +79,7 @@ input[type=text] {
 	font: 13px/18px "Lucida Grande", Lucida, Verdana, sans-serif;
 	color: #666;
 	text-shadow: #111 0 0 1px;
-	/*-webkit-transition: all 0.1s linear;*/
+	-webkit-transition: all 0.1s linear;
 }
 
 input[type=text]:hover {
@@ -69,19 +92,21 @@ input[type=text]:focus {
 	color: #ccc;
 }
 
-form {
+
+/*form textarea {
 	border: 1px solid #333;
 	border-radius: 5px;
-/*	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;*/
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
 	margin: 0;
-}
+}*/
 
 form input[type=submit] {
 	width: 300px;
 	height: 30px;
 	line-height: 30px; 
 	background: url(/img/comment.png) no-repeat 0 0;
+	
 }
 
 form a {

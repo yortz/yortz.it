@@ -1,5 +1,7 @@
 /* @override http://localhost:4000/lib/yortz.css */
 
+/* @override http://localhost:4000/lib/yortz.css */
+
 /* @group Defaults */
 
 html, body, div, span, applet, object, iframe,
@@ -503,10 +505,10 @@ h3 {
 	padding-bottom: 20px;
 }
 
-#comments input, #comments textarea {
+/*#comments input, #comments textarea {
 	background: none;
 	resize: none;
-}
+}*/
 
 #comments .dsq-header-avatar img {
 	display: block;
