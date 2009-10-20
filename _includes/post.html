@@ -18,11 +18,12 @@
 	</div>
 	
 	<div class="entry-footer">
-		<a class="entry-comments" href="{{ post.url }}#disqus_thread">0</a>
+	
+	
+			
+	
 		<p>
-			Posted by {{ site.author.name }} on {{ post.date | date:'%A, %B %d, %Y' | replace:' 0',' ' }}
-		</p>
-		<p>
+			Posted by <a href="/about">{{ site.author.name }} </a> <!-- on {{ post.date | date:'%A, %B %d, %Y' | replace:' 0',' ' }} --> |
 			Filed in
 		<a href="/{{ post.categories }}.html">	{{ post.categories | array_to_sentence_string | capitalize }} </a>
 			{% unless post.tags == empty %}
@@ -32,6 +33,8 @@
 				{% endfor %}
 				
 			{% endunless %}
+			
+			| 	<a href="{{ post.url }}#disqus_thread">0</a>
 		</p>
 	</div>
 </div>
