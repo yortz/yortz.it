@@ -27,6 +27,12 @@ set :deploy_via, :remote_cache
  
 namespace :deploy do
   
+  desc "link to www"
+  task :ls_app do
+  run "cd /var/www"
+  sudo "ln -s #{deploy_to}/current/_site /var/www/#{application}"
+  end
+  
   desc "Set application directory user and permission"
    task :set_app_dir_access, :roles => :app do
      sudo "chown #{user}:#{user} -R #{deploy_to}"
@@ -58,16 +64,10 @@ end
  
 after "deploy:setup", "deploy:set_app_dir_access" 
 after "deploy:update_code", "jekyll:generate_site"
-after "deploy:symlink", "apache:ls_app"
+after "deploy:symlink", "deploy:ls_app"
 # after "apache:ls_app" , "apache:config_vhost"
 
 namespace :apache do
-  
-  desc "link to www"
-  task :ls_app do
-  run "cd /var/www"
-  sudo "ln -s #{deploy_to}/current/_site /var/www/#{application}"
-  end
 
   desc "Configure VHost"
   task :config_vhost do
