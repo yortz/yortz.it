@@ -10,28 +10,8 @@
 	list-style: none;
 }
 
-
-
-form-message, #comment-form {
-	color: #f2e6d8;
-    overflow: hidden;
-}
-
-
-#comment-form {
-	background-color: #f93446;
-	overflow: hidden;
-}
- #dsq-textarea-wrapper{
-	overflow: hidden;
-}
-
-#dsq-content .dsq-textarea .dsq-textarea-wrapper {
-padding:0;
-}
-
 textarea {
-	height: 150px;
+	height: 100px;
 	background: none;
 	border-bottom: 1px solid #333;
 	padding-top: 1px;
@@ -59,7 +39,6 @@ input[type=submit] {
 	cursor: pointer;
 	opacity: .75;
 	-webkit-transition: opacity 0.1s linear;
-	
 }
 
 input[type=submit]:hover,
@@ -92,21 +71,19 @@ input[type=text]:focus {
 	color: #ccc;
 }
 
-
-/*form textarea {
+form {
 	border: 1px solid #333;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	margin: 0;
-}*/
+}
 
 form input[type=submit] {
 	width: 300px;
 	height: 30px;
 	line-height: 30px; 
 	background: url(/img/comment.png) no-repeat 0 0;
-	
 }
 
 form a {
@@ -144,3 +121,4 @@ form small {
 #dsq-post-retweet {
 	display:none;
 }
+

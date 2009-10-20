@@ -1,6 +1,6 @@
 --- 
 layout:   post
-title:    Inaugural <code>POST</code>
+title:    Inaugural POST
 category: category2
 tags:
 - JavaScript
