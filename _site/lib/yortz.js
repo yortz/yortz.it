@@ -11,7 +11,7 @@ window.addEvents({
 		
 		$$('a[href^=mailto:]').unmaskEmail();
 		
-		new Request.Twitter('appden', {
+		new Request.Twitter('yortz_rfc', {
 			data: { count: 3 },
 			onSuccess: function(tweets){
 				for (var i = tweets.length; i--; )
@@ -149,7 +149,7 @@ var Analytics = new Class({
 	
 	onload: function(){
 		try {
-			_gat._getTracker('UA-4604812-1')._trackPageview();
+			_gat._getTracker('UA-11182261-1')._trackPageview();
 		} catch(e) {}
 	}
 	
