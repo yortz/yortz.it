@@ -49,6 +49,7 @@ copyright:
 css:
     - /lib/yortz.css
     - /lib/syntax.css
+    - /lib/disqus.css
     
 js:
     - http://ajax.googleapis.com/ajax/libs/mootools/1.2.3/mootools-yui-compressed.js
