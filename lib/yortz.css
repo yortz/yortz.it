@@ -1,8 +1,4 @@
-/* @override http://localhost:4000/lib/yortz.css */
-
-/* @override http://localhost:4000/lib/yortz.css */
-
-/* @override http://localhost:4000/lib/yortz.css */
+/* @override http://yortz.it/lib/yortz.css */
 
 /* @group Defaults */
 
@@ -564,21 +560,74 @@ h3 {
 	padding-bottom: 10px;
 }
 
-#search {
-	margin-left: -24px;
-	width: 320px;
-	height: 40px;
-	background-image: url(images/search.png);
+/* @group search */
+
+
+div.search.widget form {
+	margin-top: 15px;
+	border: 1px solid #333;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	height: 45px;
+	position: relative;
+	background: #0d0d0d;
+	padding-bottom: -5p;
 }
 
-#search input {
-	padding: 0;
-	margin: 13px 0 0 43px;
-	width: 155px;
+div.cse-branding-form, div.cse-branding-bottom {
+	background: #0d0d0d;
+	height: 50px;
+}
+
+
+
+div.search.widget label {
+	position: absolute;
+	top: 0;
+	right: 79px;
+	bottom: 0;
+	left: 0;
+	cursor: text;
+	
+}
+
+div.cse-branding-form input[type=text] {
+	position: absolute;
+	top: 6px;
+	left: 9px;
+	width: 150px;
 	background: none;
-	color: #464646;
+	border-bottom: 1px solid #333;
+	font: 13px/20px "Lucida Grande", Lucida, Verdana, sans-serif;
+	/*color: #b8bcbf;*/
+	color: #f2e6d8;
+	text-shadow: #111 0 0 1px;
+
+
 }
 
+div.search.widget label:hover input[type=text] {
+	border-color: #444;
+	color: #999;
+}
+
+div.search.widget label:hover input[type=text]:focus {
+	border-color: #555;
+	color: #ccc;
+}
+
+div.search.widget input[type=submit] {
+	position: absolute;
+	top: 9px;
+	right: 9px;
+	width: 70px;
+	height: 20px;
+	background: url(/img/search.png) no-repeat 0 0;
+	color: #f20505;
+}
+
+/* @end */
 /* @end */
 
 /* @group Footer */
