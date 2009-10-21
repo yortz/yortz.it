@@ -16,7 +16,7 @@ layout: default
         {% else %}
         {% assign class="ultra-popular" %}
     {% endcase %}
-        <li class="{{ class }}"><a href="{{ site.tag_root }}/{{ tag[0] | cgi_escape }}/" title="View entries tagged '{{ tag[0] }}'">{{ tag[0] }}</a></li>
+        <li class="{{ class }}"><a href="{{ site.tag_root }}/{{ tag[0] | cgi_escape }}/" title="View entries tagged '{{ tag[0] }}'">{{ tag[0] }} </a></li>
 {% endfor %}
     </ol>
 </div>
