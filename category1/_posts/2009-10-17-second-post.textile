@@ -1,6 +1,6 @@
 --- 
 layout:   post
-title:    Second POST
+title:    Nothing interesting here
 category: category1
 tags:
 - JavaScript

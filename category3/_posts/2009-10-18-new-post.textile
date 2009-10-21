@@ -1,6 +1,6 @@
 --- 
 layout:   post
-title:    Inaugural POST
+title:    Here I am!
 category: category3
 tags:
 - JavaScript
