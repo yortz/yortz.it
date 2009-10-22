@@ -1,4 +1,4 @@
-pygments:       true
+pygments: true
 permalink: /:year/:month/:day/:title
 paginate:       4
 haml: true
