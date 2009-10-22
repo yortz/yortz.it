@@ -10,6 +10,8 @@
 
 /* @override http://localhost:4000/lib/yortz.css */
 
+/* @override http://localhost:4000/lib/yortz.css */
+
 /* @override http://yortz.it/lib/yortz.css */
 
 /* @group Defaults */
@@ -342,6 +344,7 @@ h3 {
 .entry-date div {
 	background-color: #f20505;
 	padding-top: 5px;
+	padding-bottom: 5px;
 	padding-bottom: 5px;
 	/*color: #f20505;*/
 }
