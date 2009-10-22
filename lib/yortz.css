@@ -6,6 +6,8 @@
 
 /* @override http://localhost:4000/lib/yortz.css */
 
+/* @override http://localhost:4000/lib/yortz.css */
+
 /* @override http://yortz.it/lib/yortz.css */
 
 /* @group Defaults */
@@ -325,11 +327,11 @@ h3 {
 
 /* @group Entry */
 
-.entry, #pagination, #comments {
+.entry, #pagination, #comments, .entry-archive {
 	margin-left: 50px;
 }
 
-.entry {
+.entry,   {
 	position: relative;
 	margin-bottom: 50px;
 	/*padding-left: 10px;*/
@@ -430,7 +432,7 @@ h3 {
 	margin: 1em 0;
 }
 
-.entry h2 {
+.entry h2, .entry-archive, .entry-archive dt {
 	margin-bottom: 10px;
 }
 
@@ -748,34 +750,25 @@ div.search.widget input[type=submit] {
         border:     1px solid #999;
         background: #EEE;
     }
-    div.archive ol {
-        width:          43.286em;
-        font:           1.077em/1.5 Georgia,Palatino,'Palatino Linotype',Times,'Times New Roman',serif;
-        text-align:     justify;
-        margin:         1em auto;
+    div.archive ol, div.entry-archive dl {
+	font: 16px/18px "Lucida Grande", Lucida, Verdana, sans-serif;
+	/*color: #b8bcbf;*/
+	color: #f2e6d8;
+	text-shadow: #111 0 0 1px;
     }
-        .archive ol li {
+        .archive ol li, .entry-archive dl dd {
             margin:     0 0 1.5em 0;
             clear:      both;
             overflow:   visible;
         }
-            .archive ol li a:first-child {
+            .archive ol li a:first-child, .entry-archive dl li a:first-child {
                 float:          left;
                 margin-bottom:  0.25em;
-                margin-left:    -20px;
-                font:           1.143em/1.25 Georgia,Palatino,'Palatino Linotype',Times,'Times New Roman',serif;
-                font-variant:   small-caps;
-                text-transform: capitalize;
+                font: 16px/18px "Lucida Grande", Lucida, Verdana, sans-serif;
                 text-align:     left;
                 width:          490px;
             }
-            .archive ol li.internal a:first-child {
-                font-size:      1.5em;
-            }
-            .archive ol li.external a:first-child {
-                padding-left:   20px;
-                background:     url(http://www.google.com/s2/favicons?domain=delicious.com) top left no-repeat;
-            }
+            
         .archive .meta {
             float:          right;
             text-align:     right;
@@ -783,26 +776,8 @@ div.search.widget input[type=submit] {
             color:          #666;
             font-size:      0.786em;
         }
-    .archive ol li.flickr {
-        position:   relative;
-        overflow:   hidden;
-        min-height: 67px;
-    }
-        .archive ol li.flickr img {
-            width:      63px;
-            border:     1px solid #333;
-            margin:     0pt 1em 1em 0pt;
-            padding:    1px;
-            position:   absolute;
-            top:        0;
-            left:       0;
-        }
-        .archive ol li.flickr p, .archive ol li.flickr a {
-            margin-left:    77px;
-        }
-        .archive ol li.flickr a {
-            width:  400px;
-        }
+
+
 
 /*****************************************************************************
  *  TAG CLOUD
