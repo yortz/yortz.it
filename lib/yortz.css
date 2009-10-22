@@ -8,6 +8,8 @@
 
 /* @override http://localhost:4000/lib/yortz.css */
 
+/* @override http://localhost:4000/lib/yortz.css */
+
 /* @override http://yortz.it/lib/yortz.css */
 
 /* @group Defaults */
@@ -54,10 +56,9 @@ body p {
 
 body {
 	font: 13px/18px "Lucida Grande", Lucida, Verdana, sans-serif;
-	/*color: #b8bcbf;*/
 	color: #f2e6d8;
-	background-color: #222;
 	/*background-color: #222;*/
+	background-color: #0d0d0d;
 	text-shadow: #111 0 0 1px;
 }
 
