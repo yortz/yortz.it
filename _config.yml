@@ -1,6 +1,6 @@
 pygments: true
 permalink: /:year/:month/:day/:title
-paginate:       4
+paginate:   5
 haml: true
 
 
@@ -35,6 +35,13 @@ nav:
     #       
     # - name: Contact
     #   url:  mailto:info-at-yortz-dot-it
+    
+bookmarks:
+    - url: http://railsenvy.com
+      title: railsenvy
+      
+    - url: http://railscasts.com
+      title: railscast    
     
 
 footer:

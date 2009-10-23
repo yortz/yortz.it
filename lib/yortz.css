@@ -4,16 +4,6 @@
 
 /* @override http://localhost:4000/lib/yortz.css */
 
-/* @override http://localhost:4000/lib/yortz.css */
-
-/* @override http://localhost:4000/lib/yortz.css */
-
-/* @override http://localhost:4000/lib/yortz.css */
-
-/* @override http://localhost:4000/lib/yortz.css */
-
-/* @override http://yortz.it/lib/yortz.css */
-
 /* @group Defaults */
 
 html, /*body,*/ div, span, applet, object, iframe,
@@ -112,6 +102,7 @@ table {
 
 a, h1, h2, h3, h4, h5, h6, #beta h3 a, #comments .dsq-help {
 	color: #f20505;
+	/*color: #d9072d;*/
 	text-decoration: none;
 }
 
@@ -226,6 +217,8 @@ h3 {
 	font-size: 12px;
 	line-height: 16px;
 	color: #efefef;
+	height: 20px;
+	margin-bottom: 10px;
 }
 
 #header div span {
@@ -238,10 +231,13 @@ h3 {
 	bottom: 45px;
 }
 
+
 #header h1 a {
-	left: 65px;
-	height: 50px;
-	width: 270px;
+	left: 84px;
+	height: 70px;
+	width: 242px;
+	background: url(images/yortzitlogo.png) no-repeat;
+	padding-top: 0;
 }
 
 #subscribe {
@@ -326,6 +322,11 @@ h3 {
 	float: right;
 	width: 205px;
 	padding-right: 25px;
+	padding-top: 25px;
+}
+
+#beta img {
+	width: 205px;
 }
 
 /* @group Entry */
@@ -393,10 +394,11 @@ h3 {
 	width:  580px;
 	border-top: 1px solid #333;
 	height: 20px;
-	color: #666;
+	/*color: #333;*/
 	font-size: 11px;
 	text-transform: uppercase;
 	padding-top: 9px;
+	padding-bottom: 15px;
 	text-align: center;
 }
 
@@ -440,8 +442,13 @@ h3 {
 	margin-bottom: 10px;
 }
 
-.entry h2 , .entry h2 a {
+.entry h2 {
+	margin-top: 10px;
+}
+
+.entry h2 , .entry h2 a, #beta h3, #beta h3 a, #beta h3 a:hover  {
 	color: #f20505;
+	font-family: "Trebuchet MS";
 }
 
 .entry-contents h3 {
@@ -541,6 +548,7 @@ h3 {
 /* @group Pagination */
 
 #pagination {
+	margin-top:10px ;
 	text-align: center;
 }
 
@@ -596,11 +604,19 @@ h3 {
 
 /* @group Sidebar */
 
-.widget {
+.widget{
 	line-height: 1.2;
 	overflow: hidden;
 	margin-bottom: 20px;
 }
+
+.tag-cloud {
+	margin-top: 0px;
+	padding: 0px;
+	overflow: hidden;
+	
+}
+
 
 .widget h3, .tag-cloud h3 {
 	font-size: 15px;
@@ -628,8 +644,9 @@ h3 {
 	color: #f5f1d4;
 }
 
-.tweet a {
-	color: #f2e6d8;
+.tweet a, .about a {
+	/*color: #f2e6d8;*/
+	color: #f20505;
 }
 #tweets .tweet {
 	padding-bottom: 10px;
