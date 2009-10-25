@@ -12,7 +12,7 @@ title:          Y0rTz.it
 url:            http://yortz.it
 feed:           /atom.xml
 description:    "ROR developer lost in IT."
-comment:        now powered by JEKYLL!
+comment:        now powered by <a href="http://github.com/mojombo/jekyll">JEKYLL!</a>
 
 author:
     name:       Y0rTz

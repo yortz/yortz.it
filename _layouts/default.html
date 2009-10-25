@@ -30,16 +30,18 @@
 		
 	</head>
 	<body>
+		<div id="up-header" ></div>
 		<div id="header">
 			<h1>
 				<a href="/">{{ site.title }}</a>
 			</h1>
-			
 			<div>
 				<span>/*</span> {{ site.comment }} <span>*/</span>
+							<!-- <a href="{{ site.feed }}" id="subscribe">Subscribe</a> -->
 			</div>
+
 			
-			<a href="{{ site.feed }}" id="subscribe">Subscribe</a>
+
 			
 			{% include nav.html %}
 		</div>

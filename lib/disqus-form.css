@@ -2,6 +2,8 @@
 
 /* @override http://yortz.it/lib/disqus-form.css */
 
+/* @override http://yortz.it/lib/disqus-form.css */
+
 
 * {
 	margin: 0;
@@ -83,10 +85,12 @@ form {
 }
 
 form input[type=submit] {
-	width: 300px;
+	width: 100px;
 	height: 30px;
 	line-height: 30px; 
 	background: url(/img/comment.png) no-repeat 0 0;
+	position: relative;
+	right: 80px;
 }
 
 form a {
