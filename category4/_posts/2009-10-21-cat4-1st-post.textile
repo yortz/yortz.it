@@ -1,6 +1,6 @@
 --- 
-layout: post
-title: cat 4 post
+layout:   post
+title:    cat 4 post
 categpry: category4
 tags:
 - Tag4

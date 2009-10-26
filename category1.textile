@@ -3,14 +3,16 @@ layout: default
 title: category1
 ---
 <div class="entry">
-	<h2>
-    {{ page.title }}
-  </h2>
-	<div class="archive" >
-	<ol >
-	{% for post in site.categories.category1 %}
-	<li><a href="{{ post.url }}">{{ post.title }}</a><abbr>{{ post.date | date_to_string }}</abbr></li>
-	{% endfor %}
-	</ol>
-	</div>
-	</div>
+	<h2>{{ page.title }}</h2>
+<div class="archive">
+    <ol>
+    {% for post in site.categories.category1 %}
+        <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            <abbr>{{ post.date | date_to_string }}</abbr>
+            
+        </li>
+    {% endfor %}
+    </ol>
+</div>
+</div>

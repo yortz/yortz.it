@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="entry">
-	<h2>{{ site.tags[page.tag].size }} articles and links tagged &ldquo;<em>{{ page.tag }}</em>&rdquo;</h2>
+	<h2>{{ site.tags[page.tag].size }} articles tagged &ldquo;<em>{{ page.tag }}</em>&rdquo;</h2>
 <div class="archive">
     <ol>
     {% for p in site.tags[page.tag] %}

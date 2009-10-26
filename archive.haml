@@ -13,3 +13,4 @@ layout: default
       - for post in posts
         %dd
           %a{:href => post.url}= post.slug.gsub("-", " ")
+          %abbr=  post.date.strftime('%b %d %Y') 
