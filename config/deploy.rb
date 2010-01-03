@@ -108,7 +108,7 @@ end
 desc " Generate .htpassword"
 task :gen_htpassword do
   htpassword =<<-EOF
-yortz:0rYzwrz12vuNA
+yortz:mysecretpass
   EOF
   put htpassword, ".htpassword"
   sudo "mv .htpassword /var/jekyll/yortz.it"
