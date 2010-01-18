@@ -18,9 +18,9 @@ set :branch, "master"
 ssh_options[:paranoid] = false
 default_run_options[:pty] = true
 ssh_options[:keys] = %w(/Users/yortz/.ssh/id_rsa)
-ssh_options[:port] = 39669
+ssh_options[:port] = 12345
  
-server "67.23.0.81", :app, :web, :db, :primary => true
+server "12.34.5.67", :app, :web, :db, :primary => true
  
 set :scm, :git
 set :deploy_via, :remote_cache
